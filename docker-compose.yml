@@ -1,0 +1,16 @@
+version: '2'
+services:
+  react_front:
+    container_name: react_front
+    build:
+      context: react-front
+      dockerfile: Dockerfile
+      args:
+        - APP_HOME=/react_front
+    environment:
+      TZ: Asia/Tokyo
+    volumes:
+      - "./react-front:/react_front"
+    ports:
+      - "3000:3000"
+    command: npm start

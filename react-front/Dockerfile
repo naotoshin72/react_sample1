@@ -1,0 +1,8 @@
+FROM node:latest
+
+ENV LANG C.UTF-8
+
+ARG APP_HOME
+WORKDIR $APP_HOME
+
+RUN npm install
