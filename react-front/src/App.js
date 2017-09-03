@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Sample1 from './components/Sample1.js';
+import Sample2 from './components/Sample2.js';
 
 class App extends Component {
   render() {
@@ -13,7 +15,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Sample1 />
+        <Sample2 />
+
       </div>
+
     );
   }
 }
