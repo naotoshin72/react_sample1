@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+import ReactDOM, {render} from 'react-dom';
+
+import { Router, Route, IndexRoute, IndexLink, Link } from 'react-router';
+
 import logo from './logo.svg';
 import './App.css';
 import Sample1 from './components/Sample1.js';
 import Sample2 from './components/Sample2.js';
+
+import PageA from './PageA'
+import PageB from './PageB'
+
+var destination = document.querySelector("#container");
 
 class App extends Component {
   render() {
