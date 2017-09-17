@@ -14,3 +14,18 @@ services:
     ports:
       - "3000:3000"
     command: npm start
+  sample_api:
+    container_name: cuegent-sample_api
+    build:
+      context: ./sample_api
+      dockerfile: Dockerfile
+      args:
+        - APP_HOME=/sample_api
+    environment:
+      TZ: Asia/Tokyo
+      RAILS_ENV: development
+    command: rails s -p 3000 -b 0.0.0.0
+    volumes:
+      - ./sample_api:/sample_api
+    ports:
+      - "3001:3000"
