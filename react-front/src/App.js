@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-import Home from './Home'
-import PageA from './PageA'
-import PageB from './PageB'
+import Home from './pages/Home'
+import PageA from './pages/PageA'
+import PageB from './pages/PageB'
 
 class App extends Component {
   render() {
